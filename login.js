@@ -1,3 +1,8 @@
+import navbar from "./script/navbar.js"
+
+document.getElementById("head").innerHTML= navbar();
+
+
 var button = document.querySelector("#btn-ca");
 button.addEventListener("click", createAccount);
 

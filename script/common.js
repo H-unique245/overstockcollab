@@ -3,11 +3,11 @@ document.querySelector("#user-cart").addEventListener("click", function () {
 })
 
 document.querySelector("header > svg").addEventListener("click", function () {
-    window.location.href = "/Overstock-Clone/index.html";
+    window.location.href = "index.html";
 })
 
 document.querySelector("nav > ul:nth-child(1) > li:nth-child(1)").addEventListener("click", function () {
-    window.location.href = "/Overstock-Clone/furniture.html";
+    window.location.href = "furniture.html";
 })
 document.querySelector("nav > ul:nth-child(1) > li:nth-child(2)").addEventListener("click", function () {
     window.location.href = "/Overstock-Clone/rugs.html";
@@ -43,7 +43,7 @@ document.querySelector("nav > ul:nth-child(3) > li.crimson").addEventListener("c
     window.location.href = "/Overstock-Clone/restagcards.html";
 })
 
-document.querySelector("#user-account > p").addEventListener("click", function () {
+document.querySelector("#user-account > .anav").addEventListener("click", function () {
     window.location.href = "/Overstock-Clone/login.html";
 })
 document.querySelector("#user-account > .user-icon").addEventListener("click", function () {

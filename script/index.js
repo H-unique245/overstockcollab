@@ -1,3 +1,8 @@
+import navbar from "./navbar.js"
+
+document.getElementById("head").innerHTML= navbar();
+
+
 document.querySelector("#limitedCards > div:nth-child(1)").addEventListener("click",function(){
     window.location.href = "/Overstock-Clone/rugscards.html";
 })
