@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>productsPage</title>
+<link rel="stylesheet" href="common.css">
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    #header{
+        height: 200px;
+        width: 100%;
+    }
+    #sortingitems{
+     font-size: 16px;   
+     display: flex;
+     justify-content: end;
+     align-items: center;
+     margin-right: 30px;
+     margin-bottom: 20px;
+    }
+#sorting{
+    width: 220px;
+    height: 34px;
+    font-size: 16px;
+border-radius: 3px;
+}
+#wcontainer{
+    /* border: 1px solid red; */
+  
+    display: flex;
+}
+#filterdiv{
+    /* border: 1px solid green; */
+    width: 300px;
+}
+#cards{
+    /* border: 1px solid rgb(107, 105, 105); */
+    width: 700;
+}
+#di1{
+    
+    height: 87px;
+    width: 210px;
+    margin-left: 20px;
+    /* border: 3px solid lightgreen; */
+}
+#div2{
+    width: 138px;
+    height: 60px;
+    /* border: 1px solid magenta; */
+}
+#div3{
+    margin-left: 15px;
+    margin-top: 15px;
+    align-items: center;
+    /* border: 1px solid darkgreen; */
+    border-radius: 8px;
+    height: 30px;
+    width: 90px;
+    display: flex;
+    justify-content: center;
+}
+p{
+    font-size: 19px;
+}
+#allcat{
+    height: 600px;
+    /* background-color: rgb(136, 221, 221); */
+}
+#allcat div{
+    margin-left:20px ;
+    height: 30px;
+    width: 240px;
+    /* background-color: rgb(201, 152, 247); */
+    border: 1px solid rgb(192, 192, 192);
+}
+#cards{
+    width: 80%;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+   gap: 10px 10px;
+}
+#cards div{
+    height: 450px;
+    width: 95%;
+    border: 1px solid rgb(206, 201, 201);
+}
+#cards>div>img{
+    width: 100%;
+}
+#cards>div p{
+    margin-top: 10px;
+    margin-left: 9px;
+    font-size: 12px;
+
+}
+#cards>div h4{
+    margin-top: 5px;
+    margin-left: 9px;
+    color:#c7202c;
+
+}
+/* #p+img{
+   border: 3px solid black;
+} */
+</style>
+</head>
+<body>
+    <div id="head">
+
+    </div>
+    <h1>Farmhouse Sofas & Couches</h1>
+
+    <div id="sortingitems">
+        <span>Sort by:  &nbsp;</span>
+        <select name="sorting" id="sorting">
+       
+            <option value="Best selling">Best Selling</option>
+            <option value="on_sale">On sale</option>
+            <option value="">Price LOW - High</option>
+            <option value="">Price High - low</option>
+            <option value="">Customer Rating</option>
+            <option value="">New Arrivals</option>
+        </select>
+    </div>
+    <div id="wcontainer">
+    <div id="filterdiv">
+        <div id="di1">
+            <p>filtered by : &nbsp;&nbsp;</p>
+            <div id="div2">
+                <div id="div3"><p>Sofa  </p>
+            </div>
+                
+                </div>
+        </div>
+        <div id="allcat">
+            <div><p>prints</p></div>
+            <div>colors</div>
+            <div>Unpholestry Materials</div>
+            <div>Styles</div>
+            <div>Arm styles</div>
+            <div>Back styles</div>
+            <div>Brands</div>
+            <div><p>assembly</p></div>
+            <div><p>sales and promotion</p></div>
+            <div>Seats Up To</div>
+            <div>Product features</div>
+            <div>customer ratings</div>
+            <div>Availability</div>
+        </div>
+
+
+    </div>
+    <div id="cards">     
+       
+    </div>
+</div>
+
+    
+</body>
+</html>
+
+<script src="./furniture.js" type="module"></script>
+<script src="./script/common.js" type="module"></script>
