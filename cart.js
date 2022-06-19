@@ -34,13 +34,13 @@ cartArr.forEach(ele => {
     console.log(sum)
 
     let pr = document.getElementById("price")
-    pr.innerText = "INR  " + sum;
+    pr.innerText = "   INR  " + sum;
 
     let to = document.getElementById("total")
-    to.innerText = "INR  " + sum
+    to.innerText = "   INR  " + sum
 
     let fi = document.getElementById("finalPrice")
-    fi.innerText = "INR  " + sum;
+    fi.innerText = "  INR  " + sum;
 
 });
 
