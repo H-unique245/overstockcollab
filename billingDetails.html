@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billing details</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        #mainbox{
+            width: 70%;
+            margin: auto;
+        }
+        #logoImage{
+            width: 200px;
+            margin: auto;
+            border: 1px solid red;
+        }
+        #logoImage>img{
+            width: 164px;
+            display: block;
+            /* height: 29px; */
+        }
+        hr{
+            color: gray;
+            /* width: 80%; */
+            margin: auto;
+        }
+        #container{
+            display: flex;
+            margin: auto;
+            /* width: 68%; */
+            /* height: 400px; */
+            border: 1px solid grey ;
+        }
+        #container>div>img{
+            width: 120px;
+          
+        }
+        #selectcountry{
+            display: flex;
+            justify-content: right;
+        }
+        /* #selectcountry>div{
+            margin-right: 245px;
+        } */
+        /* #pagelink{
+            margin-left:150px;
+        } */
+        #twoboxes{
+            border: 1px solid grey;
+            /* width: 90%; */
+            /* height: 400px; */
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+        }
+        #box1{
+            border: 1px solid gray;
+            /* height: 300px; */
+            width: 48%;
+        }
+        #box2{
+            border: 1px solid gray;
+            /* height: 300px; */
+            width: 48%;
+        }
+        #twoboxes>div>h4{
+            background-color: rgb(230, 221, 221);
+            border: 1px solid gray;
+        }
+        #mandatory{
+            color: red;
+        }
+        .labelit{
+            width: 200px;
+            margin-top: 10px;
+        }
+        .databox{
+            width: 200px;
+            margin-top: 10px;
+            border: 1px solid rgb(194, 189, 189);
+            height: 22px;
+            border-radius: 3px;
+        }
+        #table2{
+            margin-top: 25px;
+        }
+
+        #headingtable2 td{
+            padding: 10px;
+            width: 200px;
+           background-color: rgb(194, 189, 189);
+        }
+        #headingtable2 td~td{
+            width: 550px;
+            background-color: rgb(194, 189, 189);
+        }
+        #headingtable2 td+td~td{
+            width: 150px;
+            background-color: rgb(194, 189, 189);
+        }
+        #headingtable2 td td td td{
+            width: 150px;
+            background-color: rgb(194, 189, 189);
+        }
+       #shippp{
+        background-color:rgb(194, 189, 189);
+        padding: 10px;
+       }
+       #confirmorder{
+        background-color:rgb(194, 189, 189);
+        padding: 10px;
+       }
+       #paymentinformation{
+        background-color:rgb(194, 189, 189);
+        padding: 10px;
+       }
+       #confirmbox{
+        /* height: 90px; */
+        border: 1px solid rgb(194, 189, 189);
+        margin-bottom: 10px;
+       }
+       #paymentbox{
+        /* height: 200px; */
+        border: 1px solid rgb(194, 189, 189);
+        margin-bottom: 10px;
+    }
+    #confirmbox td{
+        border: 1px solid red;
+        width: 950px;
+    }
+    #confirmbox td~td{
+        border: 1px solid blue;
+        width: 150px;
+    }
+    .labelit2{
+        width: 400px;
+        margin-bottom: 5px;
+    }
+    p{
+        margin-top: 15px;
+        margin-bottom:10px;
+    }
+    #placeord{
+        display: flex;
+    }
+    #placeordbtn{
+        padding: 5px 15px;
+    }
+    span{
+        color: red;
+    }
+    </style>
+</head>
+<body>
+    <div id="mainbox">
+<div id="headertop">
+    <div id="logoImage">
+        <img src="data:image/jpeg;base64,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 " alt="">     
+    </div>
+</div>
+
+        <hr>
+
+        <div id="container">
+            <div><img src="https://ak1.ostkcdn.com/img/mxc/20170922_fedexLogo.png" alt=""></div>
+            <div>   <P> Secure checkout provided by FedEx International.</P>
+                <p>Your order total includes customs and taxes, if applicable.</P></div>
+         
+        </div>
+        <div id="selectcountry">
+            <div>
+        <select name="country" id="country">
+            <option value="united_kingdom"> <img src="https://th.bing.com/th/id/OIP.yGpoTsO0jeofsirJwgc_YAHaEE?w=279&h=180&c=7&r=0&o=5&pid=1.7" alt=""> United kingdom/English</option>
+            <option value="lebanone_arabe">Lebanone/Arabe</option>
+            <option value="russia">Russia/Russian</option>
+            <option value="deutschland">Deutschland/Deutsch</option>
+        </select>
+    </div>
+    </div>
+    <p id="pagelink"> <a href="cartPage.html">Back to cart</a> </p>
+    <div id="twoboxes">
+        <div id="box1">
+            <h4>Billing Address</h4>
+
+            <table>
+                <tr> <td class="labelit">Email</td> <td> <input class="databox" id="email" type="text"></td></tr>
+                <tr> <td class="labelit">First Name</td> <td> <input class="databox" id="fname" type="text"></td></tr>
+                <tr> <td>Last Name</td> <td> <input id="lname" class="databox" type="text"></td></tr>
+                <tr> <td>Company</td> <td> <input id="company" class="databox" type="text"></td></tr>
+                <tr> <td>TX ID</td> <td> <input id="tx" class="databox" type="text"></td></tr>
+                <tr> <td>Address line 1</td> <td> <input class="databox" id="add1" type="text"></td></tr>
+                <tr> <td>Address line 2</td> <td> <input class="databox" id="add2" type="text"></td></tr>
+                <tr> <td>country</td> <td> <select name="countryadd" id="countryadd" class="databox">
+                    <option value="country">select country</option>
+                    <option value="">Angola</option>
+                <option value="">Argentina</option>
+                <option value="">Australia</option>
+                <option value="">Austria</option>
+                <option value="">Bahamas</option>
+                <option value="">india</option>
+                
+                </select></td></tr>
+                <tr> <td>city </td> <td> <input class="databox" id="city" type="text"></td></tr>
+                <tr> <td>state </td> <td> <input class="databox" id="state" type="text"></td></tr>
+                <tr> <td>zip code </td> <td> <input class="databox" id="zip" type="text"></td></tr>
+                <tr> <td>phone # </td> <td> <input class="databox" id="phone" type="text"></td></tr>
+
+
+
+
+            </table>
+
+
+             
+
+        </div>
+        <div id="box1">
+            <h4>Shipping Address</h4>
+
+            <table>
+                <tr> <td class="labelit">Email</td> <td> <input class="databox" id="email" type="text"></td></tr>
+                <tr> <td class="labelit">First Name</td> <td> <input class="databox" id="fname" type="text"></td></tr>
+                <tr> <td>Last Name <span>*</span> </td> <td> <input id="lname"  class="databox" type="text" required></td></tr>
+                <tr> <td>Company</td> <td> <input id="company" class="databox" type="text"></td></tr>
+                <tr> <td>TX ID</td> <td> <input id="tx" class="databox" type="text"></td></tr>
+                <tr> <td>Address line 1</td> <td> <input class="databox" id="add1" type="text"></td></tr>
+                <tr> <td>Address line 2</td> <td> <input class="databox" id="add2" type="text"></td></tr>
+                <tr> <td></td> <td> <p>(We cannot ship to PO box, APO or FPO addresses.)</p></td></tr>
+
+                <tr> <td>country</td> <td> <select name="countryadd" id="countryadd" class="databox">
+                    <option value="country">select country</option>
+                    <option value="">Angola</option>
+                <option value="">Argentina</option>
+                <option value="">Australia</option>
+                <option value="">Austria</option>
+                <option value="">Bahamas</option>
+                <option value="">india</option>
+                
+                </select></td></tr>
+                <tr> <td>city </td> <td> <input class="databox" id="city" type="text"></td></tr>
+                <tr> <td>state </td> <td> <input class="databox" id="state" type="text"></td></tr>
+                <tr> <td>zip code </td> <td> <input class="databox" id="zip" type="text"></td></tr>
+                <tr> <td>phone # </td> <td> <input class="databox" id="phone" type="text"></td></tr>
+
+
+
+
+            </table>
+
+
+             
+
+        </div>
+    </div>
+<table id="table2">
+    <thead id="headingtable2">
+        <td class="heading2">EDIT</td><td class="heading2">Your Items</td><td class="heading2">Price</td><td class="heading2">Total Price</td>
+    </thead>
+</table>
+
+<h4 id="shippp">Shipping Method</h4>
+<input type="radio">International Standard <br>
+
+<input type="radio">International Express 
+
+<h4 id="confirmorder">Confirm Order</h4>
+<div id="confirmbox">
+    <table>
+        <tr><td>Subtotal:</td><td></td></tr>
+        <tr><td>Shipping:</td><td></td></tr>
+        <tr><td>Duty and Tax:</td><td></td></tr>
+        <tr><td>Loss and Damage Protection</td><td></td></tr>
+        <tr><td>Order Total:</td><td></td></tr>
+    </table>
+</div>
+
+<h4 id="paymentinformation">payment information</h4>
+<div id="paymentbox">
+    <img src="https://ztransaction.bongous.com/static/css/images/pm/visa.png" alt="">
+    <img src="https://ztransaction.bongous.com/static/css/images/pm/mastercard.png" alt="">
+    <img src="https://ztransaction.bongous.com/static/css/images/pm/bitcoin.png" alt="">
+
+    <table>
+        <tr> <td class="labelit2">Card type</td> <td><select name="select" id="cardtype">
+        <option value="">select</option>
+        <option value="">visa</option>    
+        <option value="">master card</option>
+        <option value="">bitcoin</option>
+    </select></td></tr>
+        <tr> <td class="labelit2">Credit Card Number</td> <td> <input class="databox" id="fname" type="text"></td></tr>
+        <tr> <td class="labelit2">Expiration Date</td> <td> <input id="lname" class="databox" type="text"></td></tr>
+        <tr> <td class="labelit2">Security Code</td> <td> <input id="company" class="databox" type="text"></td></tr>
+        <tr> <td class="labelit2"></td> <td><img src="data:image/gif;base64,R0lGODlhWAAoANUAAP3+/ouNjvCTnHFvblJIPMvNzOhle9TZ5KKjo952gsXBu9HS0sbM1LG2y/rGyNzc3L3B0cDX0ru6uuHi4sfKysLDxOn89pKXr/j6+trg7f7+95yjt/b29uevtOPn2tPk3f/16aysrujr+87Qz6OGg9jY2MbFy9jH08/b0rLDvdHV1//n5N3d1O/0/dDHwP7z9vX/+bO0tE1CNVZELs/P11hFNldHMImCeJaWlkc6KVZDMtTS0/Ly8ujo6Pz8/P///yH5BAAAAAAALAAAAABYACgAAAb/wJ/wx6PgjsikcslsOp9QZ2wiBAgxPgAghFDQvuCweEwum8/oMaMSwvUA2CoGgJBMdvi8fs/v+/+AgXwlJQtdGENDPgMDN46PkJGSk5SVlpeWjRyJPxoYOTI5oqOkpaanqKmqq6czowM/Wp2dGjIEMza5uru8vb6/wMHCvTMzOjWwWT+IALU1NsXR0tPU1dbX2NnWNjU6AxqyPkI+OTrm5+jp6uvs7e7v7DU1MjLfy7EAPj4yx/L+/wADChxIsKDBgbZk3NAwq8o+GdCg1ZAWsdhEbhWhWaz2jCIujRM/Dst17pm/YjrqaXhhRdyPhwQA9pM305+5bjdryjzWrydP/5zw2pmUgSzRnB8cCBCwpZReU6ZPlUqdupRq1atQqWa1yrWr1AEuE2nAoaCsWQUuzppNq7btWQlry7pg67au3bsxcGhhtkwDgh0uCphYQKHADgojDhcuwJhC4RGMIxdYYKJw4R2NIxcmzBjy4wKQQ0se3Xm0CcMUEGixIkSDhhAjHi/g4tiEBAkxTIyosKAC7gqOBYeoUAHBcAnEKZjQXSFGBcjPiR+O7bi69euOGWA/LRjHnJY+XCOgwOB0BUbGEQwIcCMAEgQ42ie5YXw9Dvf387PHAR9HCPfYBYiddgwUaN1yJuDQWhUawBACeYJJwAh77rnXSAADIHDBhRMGgP8ABPKtx94NjThynyPq3VCZgIuRxgBjLxb4Ig2n4eAaQy7RUYBlEhwRwI/8GXcBfzHEQCIC7iEZgxE39MjIBhJcEMAGAfznoQTu8UZBdDtW58IJEYAZgQsCCNCBmS5EEAEFEZhwAgM2hlNFCDsy1tsIJvAWWWzA7TBCecr5WQBvFZSHZReI3elYBQWoQBx1gzraqAQjpGCCpR0YkMCmBnRqgAAu1FajBsrkiMCOjD5QgqqrEuIqISqMMMEED6hq6w6t0lorrYTgQesCKtCqwqrBLjBBrKp+gIIHHSRgQAcOLIsCC5ka4EBtcJIqTo50IlYCB1awxhonseiDFDPirDb/BAeIILIMIpv44O5e+az2AgwrPKuBBeDAAAAP+ApggAt4JqjtS1Wc6tgC4MIBR1jj+oDABAjE8EAAD9TBgQ+8SVBADwg8MEII4mwJHMUUcIBADxi0YUQBIaTgwqYgfJACC3WEEIMFFqyQQAculGejudx2uYC75Jr7UgEDtHGDj/f9MIGHxt0XgoQc8EAfAnU0vcMAPfxgRAiN3DeADiRoICELMVRJQgmuCZBAmgnWi3AsClPAcLiJyFIu2fw9HQJ9N/BQQXtcD3AfDwH88DUOErT3NA4DVPDDg+p5SKIOBsAgwgYe3JACAzcwAMMLDszdJg4wlDpnnSXMW4XfQ/Bg//FwJSBQwtXLCMbGBCGY4IMCWCwgXA+w9RDDGyH8ALNyLmTawQ8i7MBCADGEsIEFp6cedIIwgHMF3jsyQAMPzWCx1+yx3KitMviw5kn76gPAQAsAhG/3avxb8EKZK4AB95AiBJ69wAAe25KCEJaPWNBJMCPIHwBGsIEDrMZf6mrGDzIAAQg8QH0ikIAFswAAEQCgBRjgYAMOMAeGxIJc49BA6jqwgh8IEAY49MEKBMYoxygoYg60zAKQAgAaNEAEDIAADDKgAgaIoAUHoEELfNDB8qwmBhBoAQ0yUKAMYOAALQhAAy4AAQZkgS8wxKEMEyAAB/gABCDQAAgc8CkPNP/GCGF5oQ+6VQEVkBACNIBABjYwyA00AJCHPEAGEom/OWTgAp/bgCQbQIMNiOACGLhAAxoQLHEgjVwYCN8LmrUpuW3KASCAwZYKg4M8juNBjvnWCSFwAE1qcgOCDMAFLkBIDFASAy3oAQxaIIIy4rIBDCCjLRtgyRA0YGPx0oc09fECeYVHAytwgDa1mcrTWWeBfHtJDEZAzgLQCAIN4OIXmsgADh5ghRNgACcPsJsHQEB7B0giA955gBTks4wZoIH5CoGrV7mqABMoAR5K8AEWnGACKPgAIb5Aztio5oXjkkAJVLAAYEFgOSoI6QgOgIJYoWCLpykBDQ5QggKwoADqD1ipCmiggigytAD0PMABmpgBzCi0o0AF6gcQ84AdnKAEEfjAsHbQRFaFdDaJCEsFasUCVmWApbUihKomwNISsIAFrbLeqnZA1a+uigU78ICxFqAsVR3AVrZqFasOINEH6BSrNf3AA9C60RJMQAIvHMdLHtCDwhr2sIhNrGIXy9jGOtaxCSWhYAHQAx5Y9rKYzaxmN8vZznr2s6ANW1SFsDEsTPO0qE2talfL2ta6FgOI4AEnWJMuGNr2trjNrW53OwRZMENcgR0Xb4dL3OLedlvqwig+jMvc5hY3XcLlmyudS93qViG4LwwCADs=" alt=""> </td></tr>
+    
+    </table>
+</div>
+
+<img src="https://storage.crossborder.fedex.com/s3bongous/f98ca95b1b79417f2c4685355a3cfba2.png" alt="">
+<br>
+<p>
+    <input type="checkbox">
+When you sign up for email, you'll get exclusive coupons, sale notifications, and product ideas. ( ¡ )
+Privacy Policy
+</p>
+
+<hr>
+<div id="placeord">
+
+
+
+    <div><p>By clicking the Place order button, you acknowledge that your order will be processed and fulfilled by
+    FedEx Cross Border and you agree to FedEx Cross Border Terms and Conditions and Privacy Policy.</p></div>
+   
+
+
+    <div>
+        <input id="placeordbtn" value="place order" type="button">
+    </div> 
+</div>
+
+</div>
+    </body>
+</html>
+
