@@ -5,35 +5,68 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cart Page</title>
+    <link rel="stylesheet" href="common.css">
     <style>
-        #container{
-            height: 400px;
-            width: 80%;
-            border: 1px solid green;
-            margin: auto;
+        #itemdiv{
             display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin: auto;
+            border: 1px solid red;
+            margin-bottom: 10px;
         }
-        #container>div{
-            border: 2px solid hotpink;
-             
+        #cart{
+            display: flex;
+            justify-content: space-around;
         }
-        #left{
-            width: 75%;
+        .itemimage img{
+
+            width: 90%;
+            height: 150px;
+
         }
-        #right{
-            width: 25%;
+        p{
+            margin-top: 20px;
+            line-height: 20px;
+        }
+        #payments{
+            border: 1px solid green;
+            width: 350px;
+            height: 400px;
+        }
+        #checkoutbtn{
+            padding: 8px 70px;
+            background-color: rgb(53, 51, 51);
+            color: white;
+            border-radius: 5px;
+            border: none;
+            margin-top: 5px;
+            margin-left:40% ;
         }
     </style>
 </head>
 <body>
-    <h1>Shopping Cart</h1>
+  
     <div id="container">
     
-    <div id="left"></div>
-    <div id="right"></div>
 </div>
+<div id="cart">
+    <div id="items">
+
+    </div>
+    <div id="payments">
+        <p>Items price <span id="price"></span> </p>
+        <p> Sub Total<span id="total"></span> </p>
+        <hr>
+        <h1> Your Total <span id="finalPrice"></span> </h1>
+        <button id="checkoutbtn">checkout</button>
+
+    </div>
+
+</div>
+
 </body>
 </html>
-<script>
+<script src="cart.js" type="module">
 
 </script>

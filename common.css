@@ -1,4 +1,4 @@
-*{
+* {
     font-family: Helvetica, Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -8,7 +8,7 @@
     background-color:#dadcdf;
 } */
 
-#head{
+#head {
     background-color: #dadcdf;
     position: sticky;
     top: 0;
@@ -16,7 +16,7 @@
     z-index: 2;
 }
 
-header{
+header {
     margin-top: 1px;
     display: flex;
     align-items: center;
@@ -26,15 +26,15 @@ header{
 }
 
 
-header *{
+header * {
     cursor: default;
 }
 
-header input{
+header input {
     cursor: text;
 }
 
-#search{
+#search {
     border: 1px solid #dadcdf;
     box-sizing: border-box;
     border-radius: 5px;
@@ -45,7 +45,8 @@ header input{
     display: flex;
     align-items: center;
 }
-#search > input{
+
+#search>input {
     border: 0;
     width: 100%;
     font-size: 18px;
@@ -54,22 +55,22 @@ header input{
 
 }
 
-#search > input:focus{
+#search>input:focus {
     outline: none;
 }
 
-.search-icon{
+.search-icon {
     font-size: 19px;
     height: 100%;
     background-color: #f13530;
     color: white;
     padding: 10px;
     margin: 0;
-    border-radius:0 5px 5px 0;
+    border-radius: 0 5px 5px 0;
     border-bottom: 1px solid #f13530;
 }
 
-#user-account{
+#user-account {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -78,7 +79,7 @@ header input{
 
 
 
-nav{
+nav {
     margin-top: 0.5px;
     padding: 0 5px;
     height: fit-content;
@@ -89,7 +90,7 @@ nav{
     margin-bottom: 1px;
 }
 
-nav > ul:nth-child(1) {
+nav>ul:nth-child(1) {
     display: flex;
     width: 80%;
     /* border-right: 1px solid #dadcdf; */
@@ -99,50 +100,53 @@ nav > ul:nth-child(1) {
     /* padding: 5px; */
 }
 
-nav > ul:nth-child(3){
+nav>ul:nth-child(3) {
     width: 20%;
     justify-content: space-evenly;
     display: flex;
     box-sizing: border-box;
 }
 
-nav > ul > li{
+nav>ul>li {
     font-size: 13px;
     padding: 10px 0;
     box-sizing: border-box;
     list-style: none;
     cursor: pointer;
 }
-nav > ul > li:hover{
+
+nav>ul>li:hover {
     box-shadow: 0 -1px 0 black inset;
     box-sizing: border-box;
     list-style: none;
 }
-nav > ul > li.crimson:hover{
+
+nav>ul>li.crimson:hover {
     box-shadow: 0 -1px 0 #990e15 inset;
     box-sizing: border-box;
     list-style: none;
 }
 
 
-#breakLine{
+#breakLine {
     width: 1px;
     height: 18px;
     background-color: #dadcdf;
 }
-.user-icon{
+
+.user-icon {
     font-size: 24px;
 }
 
-.crimson{
+.crimson {
     color: #990e15;
 }
 
-#user-list{
+#user-list {
     position: relative;
 }
 
-#tooltip{
+#tooltip {
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -152,7 +156,7 @@ nav > ul > li.crimson:hover{
     box-sizing: border-box;
 }
 
-#user-list:hover > #tooltip{
+#user-list:hover>#tooltip {
     visibility: visible;
     width: 150px;
     left: -80px;
@@ -163,28 +167,31 @@ nav > ul > li.crimson:hover{
     box-sizing: border-box;
 }
 
-#tooltip li{
+#tooltip li {
     padding-bottom: 10px;
     font-size: 13px;
     list-style: none;
     color: #2f3337;
 }
 
-#tooltip > ul:nth-child(1){
+#tooltip>ul:nth-child(1) {
     border-bottom: 1px solid #dadcdf;
 }
-#tooltip > ul:nth-child(n+2){
+
+#tooltip>ul:nth-child(n+2) {
     margin-top: 10px;
 }
-#user-account{
+
+#user-account {
     position: relative;
 }
-#user-account> #tooltip > ul:nth-child(2){
+
+#user-account>#tooltip>ul:nth-child(2) {
     border-bottom: 1px solid #dadcdf;
 }
 
 
-#user-account:hover > #tooltip{
+#user-account:hover>#tooltip {
     visibility: visible;
     width: 225px;
     left: -75px;
@@ -195,36 +202,37 @@ nav > ul > li.crimson:hover{
     box-sizing: border-box;
 }
 
-#tooltip > ul > li > h2{
+#tooltip>ul>li>h2 {
     font-size: 14px;
     white-space: nowrap;
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
-#user-account > #tooltip > ul > li{
+
+#user-account>#tooltip>ul>li {
     width: 100%;
 }
 
-#user-account > #tooltip > ul > li.fullWidth{
+#user-account>#tooltip>ul>li.fullWidth {
     width: 100%;
 }
 
 
 /* footer css */
 
-footer{
+footer {
     background-color: #545658;
     color: white;
     font-size: 13px;
     box-sizing: border-box;
 }
 
-footer h2{
+footer h2 {
     font-size: 13px;
 }
 
-#footlinks{
+#footlinks {
     padding: 80px;
     box-sizing: border-box;
     display: flex;
@@ -233,12 +241,12 @@ footer h2{
     justify-content: space-between;
 }
 
-footer ul > li{
+footer ul>li {
     list-style-type: none;
     margin-bottom: 20px;
 }
 
-#endCredits{
+#endCredits {
     background-color: #2f3337;
     width: 100%;
     display: flex;
@@ -247,15 +255,17 @@ footer ul > li{
     box-sizing: border-box;
 }
 
-#additionalLinks > ul{
+#additionalLinks>ul {
     display: flex;
     align-items: center;
     gap: 20px;
 }
-#additionalLinks > ul > li{
+
+#additionalLinks>ul>li {
     display: flex;
     align-items: center;
 }
-#additionalLinks > ul > li > img{
+
+#additionalLinks>ul>li>img {
     width: 30px;
 }

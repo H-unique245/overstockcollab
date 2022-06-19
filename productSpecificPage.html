@@ -6,6 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>productSpecificPage</title>
     <link rel="stylesheet" href="common.css">
+    <style>
+        #path{
+            background-color: white;
+            font-size: 12px;
+            margin-left:60px ;
+        }
+        #item{
+            display: flex;
+            gap: 20px;
+            /* border: 1px solid green; */
+            background-color: white;
+        }
+       
+        #details{
+            margin-top: 100PX;
+            line-height: 30px;
+            color: rgb(116, 21, 21);
+        }
+        #addtocart{
+            background-color: teal;
+            color: white;
+            border: none;
+            padding: 8px 50px;
+            cursor: pointer;
+        }
+        #qtycart{
+            margin-top: 50PX;
+            display: flex;
+            gap: 20px;
+            
+        }
+        #qty{
+            width: 200px;
+        }
+        
+    </style>
 </head>
 <body>
 
@@ -13,8 +49,48 @@
     <div id="head">
 
     </div>
-    <div id="item"></div>
+    <p id="path">Home Goods / Furniture / Living Room Furniture / Sofas & Couches</p>
+    <div id="item">
+<div id="productpic"></div>
+<div id="productdetails">
+    <div id="details"></div>
+    <div id="qtycart">
+        <select name="" id="qty">
+            <option value="1">Quantity: 1</option>
+            <option value="2">Quantity: 2</option>
+            <option value="3">Quantity: 3</option>
+            <option value="4">Quantity: 4</option>
+            <option value="5">Quantity: 5</option>
+            <option value="6">Quantity: 6</option>
+            <option value="7">Quantity: 7</option>
+            <option value="8">Quantity: 8</option>
+            <option value="9">Quantity: 9</option>
+            <option value="10">Quantity: 10</option>
+            <option value="11">Quantity: 11</option>
+            <option value="12">Quantity: 12</option>
+            <option value="13">Quantity: 13</option>
+            <option value="14">Quantity: 14</option>
+            <option value="15">Quantity: 15</option>
+            <option value="16">Quantity: 16</option>
+            <option value="17">Quantity: 17</option>
+            <option value="18">Quantity: 18</option>
+            <option value="19">Quantity: 19</option>
+            <option value="20">Quantity: 20</option>
+
+
+        </select>
+    <button id="addtocart">Add to Cart</button>
+</div>
+</div>
+
+
+
+    </div>
 </body>
 </html>
+<script  src="item.js" type="module">
 
-<script  src="item.js" type="module"></script>
+
+
+
+</script>
