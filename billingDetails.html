@@ -17,7 +17,7 @@
         #logoImage{
             width: 200px;
             margin: auto;
-            border: 1px solid red;
+            /* border: 1px solid red; */
         }
         #logoImage>img{
             width: 164px;
@@ -130,11 +130,11 @@
         margin-bottom: 10px;
     }
     #confirmbox td{
-        border: 1px solid red;
+        /* border: 1px solid red; */
         width: 950px;
     }
     #confirmbox td~td{
-        border: 1px solid blue;
+        /* border: 1px solid blue; */
         width: 150px;
     }
     .labelit2{
@@ -153,6 +153,16 @@
     }
     span{
         color: red;
+    }
+    #placeordbtn{
+        background-color: rgb(23, 167, 167);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    #placeordbtn:hover{
+        background-color: rgb(21, 99, 99);
     }
     </style>
 </head>
@@ -188,14 +198,14 @@
             <h4>Billing Address</h4>
 
             <table>
-                <tr> <td class="labelit">Email</td> <td> <input class="databox" id="email" type="text"></td></tr>
-                <tr> <td class="labelit">First Name</td> <td> <input class="databox" id="fname" type="text"></td></tr>
-                <tr> <td>Last Name</td> <td> <input id="lname" class="databox" type="text"></td></tr>
+                <tr> <td class="labelit">Email  <span>*</span></td> <td> <input class="databox" id="email" type="text" required></td></tr>
+                <tr> <td class="labelit">First Name  <span>*</span></td> <td> <input class="databox" id="fname" type="text" required></td></tr>
+                <tr> <td>Last Name  <span>*</span></td> <td> <input id="lname" class="databox" type="text" required></td></tr>
                 <tr> <td>Company</td> <td> <input id="company" class="databox" type="text"></td></tr>
-                <tr> <td>TX ID</td> <td> <input id="tx" class="databox" type="text"></td></tr>
-                <tr> <td>Address line 1</td> <td> <input class="databox" id="add1" type="text"></td></tr>
+                <tr> <td>TX ID</td> <td> <input id="tx" class="databox" type="text" required></td></tr>
+                <tr> <td>Address line 1  <span>*</span></td> <td> <input class="databox" id="add1" type="text" required></td></tr>
                 <tr> <td>Address line 2</td> <td> <input class="databox" id="add2" type="text"></td></tr>
-                <tr> <td>country</td> <td> <select name="countryadd" id="countryadd" class="databox">
+                <tr> <td>country  <span>*</span></td> <td> <select name="countryadd" id="countryadd" class="databox" required>
                     <option value="country">select country</option>
                     <option value="">Angola</option>
                 <option value="">Argentina</option>
@@ -205,10 +215,10 @@
                 <option value="">india</option>
                 
                 </select></td></tr>
-                <tr> <td>city </td> <td> <input class="databox" id="city" type="text"></td></tr>
+                <tr> <td>city  <span>*</span></td> <td> <input class="databox" id="city" type="text" required></td></tr>
                 <tr> <td>state </td> <td> <input class="databox" id="state" type="text"></td></tr>
                 <tr> <td>zip code </td> <td> <input class="databox" id="zip" type="text"></td></tr>
-                <tr> <td>phone # </td> <td> <input class="databox" id="phone" type="text"></td></tr>
+                <tr> <td>phone #  <span>*</span></td> <td> <input class="databox" id="phone" type="text" required></td></tr>
 
 
 
@@ -223,16 +233,16 @@
             <h4>Shipping Address</h4>
 
             <table>
-                <tr> <td class="labelit">Email</td> <td> <input class="databox" id="email" type="text"></td></tr>
-                <tr> <td class="labelit">First Name</td> <td> <input class="databox" id="fname" type="text"></td></tr>
+                <tr> <td class="labelit">Email <span>*</span></td> <td> <input class="databox" id="email" type="text"></td></tr>
+                <tr> <td class="labelit">First Name <span>*</span></td> <td> <input class="databox" id="fname" type="text"></td></tr>
                 <tr> <td>Last Name <span>*</span> </td> <td> <input id="lname"  class="databox" type="text" required></td></tr>
                 <tr> <td>Company</td> <td> <input id="company" class="databox" type="text"></td></tr>
                 <tr> <td>TX ID</td> <td> <input id="tx" class="databox" type="text"></td></tr>
-                <tr> <td>Address line 1</td> <td> <input class="databox" id="add1" type="text"></td></tr>
+                <tr> <td>Address line 1 <span>*</span> </td> <td> <input class="databox" id="add1" type="text"></td></tr>
                 <tr> <td>Address line 2</td> <td> <input class="databox" id="add2" type="text"></td></tr>
                 <tr> <td></td> <td> <p>(We cannot ship to PO box, APO or FPO addresses.)</p></td></tr>
 
-                <tr> <td>country</td> <td> <select name="countryadd" id="countryadd" class="databox">
+                <tr> <td>country <span>*</span></td> <td> <select name="countryadd" id="countryadd" class="databox">
                     <option value="country">select country</option>
                     <option value="">Angola</option>
                 <option value="">Argentina</option>
@@ -242,10 +252,10 @@
                 <option value="">india</option>
                 
                 </select></td></tr>
-                <tr> <td>city </td> <td> <input class="databox" id="city" type="text"></td></tr>
-                <tr> <td>state </td> <td> <input class="databox" id="state" type="text"></td></tr>
-                <tr> <td>zip code </td> <td> <input class="databox" id="zip" type="text"></td></tr>
-                <tr> <td>phone # </td> <td> <input class="databox" id="phone" type="text"></td></tr>
+                <tr> <td>city <span>*</span> </td> <td> <input class="databox" id="city" type="text" required></td></tr>
+                <tr> <td>state </td> <td> <input class="databox" id="state" type="text" required></td></tr>
+                <tr> <td>zip code </td> <td> <input class="databox" id="zip" type="text" required></td></tr>
+                <tr> <td>phone # <span>*</span></td> <td> <input class="databox" id="phone" type="text" required></td></tr>
 
 
 
@@ -259,8 +269,10 @@
     </div>
 <table id="table2">
     <thead id="headingtable2">
+
         <td class="heading2">EDIT</td><td class="heading2">Your Items</td><td class="heading2">Price</td><td class="heading2">Total Price</td>
     </thead>
+    <tbody id="tabbody"></tbody>
 </table>
 
 <h4 id="shippp">Shipping Method</h4>
@@ -271,11 +283,11 @@
 <h4 id="confirmorder">Confirm Order</h4>
 <div id="confirmbox">
     <table>
-        <tr><td>Subtotal:</td><td></td></tr>
-        <tr><td>Shipping:</td><td></td></tr>
-        <tr><td>Duty and Tax:</td><td></td></tr>
-        <tr><td>Loss and Damage Protection</td><td></td></tr>
-        <tr><td>Order Total:</td><td></td></tr>
+        <tr><td>Subtotal:</td><td id="itemamt"></td></tr>
+        <tr><td>Shipping:</td><td id="shipamt"> </td></tr>
+        <tr><td>Duty and Tax:</td><td id="duty"></td></tr>
+        <tr><td>Loss and Damage Protection</td><td id="lossprotect"></td></tr>
+        <tr><td>Order Total:</td><td id="finaltotal"></td></tr>
     </table>
 </div>
 
@@ -285,6 +297,7 @@
     <img src="https://ztransaction.bongous.com/static/css/images/pm/mastercard.png" alt="">
     <img src="https://ztransaction.bongous.com/static/css/images/pm/bitcoin.png" alt="">
 
+    <form>
     <table>
         <tr> <td class="labelit2">Card type</td> <td><select name="select" id="cardtype">
         <option value="">select</option>
@@ -292,9 +305,9 @@
         <option value="">master card</option>
         <option value="">bitcoin</option>
     </select></td></tr>
-        <tr> <td class="labelit2">Credit Card Number</td> <td> <input class="databox" id="fname" type="text"></td></tr>
-        <tr> <td class="labelit2">Expiration Date</td> <td> <input id="lname" class="databox" type="text"></td></tr>
-        <tr> <td class="labelit2">Security Code</td> <td> <input id="company" class="databox" type="text"></td></tr>
+        <tr> <td class="labelit2">Credit Card Number</td> <td> <input class="databox" id="fname" type="text" required></td></tr>
+        <tr> <td class="labelit2">Expiration Date</td> <td> <input id="lname" class="databox" type="text" required></td></tr>
+        <tr> <td class="labelit2">Security Code</td> <td> <input id="company" class="databox" type="text" required></td></tr>
         <tr> <td class="labelit2"></td> <td><img src="data:image/gif;base64,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" alt=""> </td></tr>
     
     </table>
@@ -311,19 +324,109 @@ Privacy Policy
 <hr>
 <div id="placeord">
 
-
-
     <div><p>By clicking the Place order button, you acknowledge that your order will be processed and fulfilled by
     FedEx Cross Border and you agree to FedEx Cross Border Terms and Conditions and Privacy Policy.</p></div>
-   
-
-
+  
     <div>
-        <input id="placeordbtn" value="place order" type="button">
+        <input id="placeordbtn" value="place order" type="submit">
     </div> 
 </div>
 
 </div>
+</form>
     </body>
 </html>
+<script>
+     var Arr = JSON.parse(localStorage.getItem("cartitems"))
+    console.log(Arr)
+var totalamt=0;
+    Arr.forEach(ele => {
+        var tr=document.createElement("tr")
 
+        var sr=document.createElement("td")
+        sr.innerText="*";
+
+        var name=document.createElement("td")
+        name.innerText=ele.p2;
+
+         var val=document.createElement("td")
+        // name.innerText=ele.p;
+        
+
+
+        tr.append(sr,name,ele.p)
+
+
+
+        document.getElementById("tabbody").append(tr);
+
+
+
+        var tr=document.createElement("tr")
+
+var sr2=document.createElement("td")
+//sr.innerText="";
+
+var name2=document.createElement("td")
+//name.innerText="";
+
+ var val2=document.createElement("td")
+//val.innerText="Total";
+
+
+ totalamt=totalamt+ele.p;
+var val=document.createElement("td")
+val.innerText="Totalamt";
+
+tr.append(sr2,name2,val2,totalamt)
+
+document.getElementById("tabbody").append(tr)
+
+
+
+    });
+
+
+    var a=document.getElementById("itemamt")
+    a.innerText=`${totalamt}`;
+   var b= document.getElementById("shipamt")
+   b.innerText=+1000;
+   var c= document.getElementById("duty")
+   c.innerText=+2000;
+   var d= document.getElementById("lossprotect")
+   d.innerText=+3000;
+   var gh=1000+2000+3000;
+    var sub=totalamt+gh
+    var fin=document.getElementById("finaltotal")
+    fin.innerText=`${sub}`;
+
+    document.querySelector("form").addEventListener("submit",payment)
+
+function payment(){
+
+event.preventDefault();
+
+    let crnum=document.getElementById("fname")
+    let  crdate =document.getElementById("lname")
+     let  cvv= document.getElementById("company")
+    
+    console.log(crnum,crdate,cvv)
+
+     if(crnum.value=="123456789" && crdate.value=="03/2023" && cvv.value=="123"){
+    document.getElementById("placeordbtn").addEventListener("click",function(){
+         
+        alert("Your order is placed successfully")
+    })
+}else 
+{
+    document.getElementById("placeordbtn").addEventListener("click",function(){
+    
+        alert("fill all required details") 
+    })
+}
+
+
+}
+
+    
+</script>
