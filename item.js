@@ -34,6 +34,6 @@ btn.addEventListener("click", function () {
     itemArr.push(obj);
     console.log(itemArr)
     localStorage.setItem("cartitems", JSON.stringify(itemArr))
-    // window.location.href = "cartPage.html"
+    window.location.href = "cartPage.html"
 
 })
