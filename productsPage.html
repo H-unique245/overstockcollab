@@ -40,7 +40,7 @@ border-radius: 3px;
     width: 300px;
 }
 #cards{
-    border: 1px solid rgb(107, 105, 105);
+    /* border: 1px solid rgb(107, 105, 105); */
     width: 700;
 }
 #di1{
@@ -89,9 +89,8 @@ p{
    gap: 10px 10px;
 }
 #cards div{
-    height: 440px;
-    width: 340px;
-    
+    height: 450px;
+    width: 95%;
     border: 1px solid rgb(206, 201, 201);
 }
 #cards>div>img{
@@ -106,7 +105,7 @@ p{
 #cards>div h4{
     margin-top: 5px;
     margin-left: 9px;
-    
+    color:#c7202c;
 
 }
 /* #p+img{
@@ -160,13 +159,7 @@ p{
 
 
     </div>
-    <div id="cards">
-        <!-- <div>
-            <img src="https://ak1.ostkcdn.com/images/products/is/images/direct/f0d9c7ceb30547b56a59d09e94fa32585ca0db92/Bobran-Modern-Velvet-3-Seater-Sofa-by-Christopher-Knight-Home.jpg?imwidth=480&impolicy=medium" alt="">
-            <h4>starting at INR 79772.76</h4>
-            <p>Bobran-Modern-Velvet-3-Seater-Sofa-by-Christopher-Knight-Home -30.00" D x 83.25" W x 30.25" H</p>
-        </div> -->
-        
+    <div id="cards">     
        
     </div>
 </div>
@@ -183,103 +176,105 @@ document.getElementById("head").innerHTML=navbar();
 var objArr=[{
      image : "https://ak1.ostkcdn.com/images/products/is/images/direct/0046db7ffa714e44681c1a4e7a516985f532252f/Luxury-Folding-Futon-Sofa-Bed.jpg?imwidth=480&impolicy=medium",
      p : 48774,
-    //  stars : "https://ak1.ostkcdn.com/img/mxc/20200227_rating-star-full.svg",
+     star:"https://image.shutterstock.com/image-vector/four-golden-star-rating-illustration-260nw-1442679176.jpg",
      p2 :"luxury folding futon sofa bed",
 },
 {
      image : "https://ak1.ostkcdn.com/images/products/is/images/direct/f0d9c7ceb30547b56a59d09e94fa32585ca0db92/Bobran-Modern-Velvet-3-Seater-Sofa-by-Christopher-Knight-Home.jpg?imwidth=480&impolicy=medium",
      p : 63782,
-    //  stars : "https://ak1.ostkcdn.com/img/mxc/20200227_rating-star-full.svg",
+     star:"https://image.shutterstock.com/image-vector/four-golden-star-rating-illustration-260nw-1442679176.jpg",
      p2 :"Bobran Modern Velvet 3-seat Sofa by Christopher Knight Home - 30.00 D x 83.25 W x 30.25 H",
 },
 {
      image : "https://ak1.ostkcdn.com/images/products/is/images/direct/069f66fb9aec8cdb311f1fd0066506aaa5e544b4/VIATOL-High-Back-Couch-Mid-century-Suede-Leather-Wood-Legs-Chaise-Sofa.jpg?imwidth=480&impolicy=medium",
      p : 112885,
-     stars : "https://ak1.ostkcdn.com/img/mxc/20200227_rating-star-full.svg",
+     star:"https://image.shutterstock.com/image-vector/four-golden-star-rating-illustration-260nw-1442679176.jpg",
      p2 :"VIATOL High Back Couch Mid-century Suede Leather Wood Legs Chaise Sofa",
 },
 {
      image : "https://ak1.ostkcdn.com/images/products/is/images/direct/456eefc6f57dc82f2fc295518f0752f816876bfe/Morden-Fort-Couches-for-Living-Room%2C-Sofas-for-Living-Room-Furniture-Sets%2C-Sofa%2C-Fabric%2C-Velvet.jpg?imwidth=480&impolicy=medium",
      p : 73386,
-    //  stars : "https://ak1.ostkcdn.com/img/mxc/20200227_rating-star-full.svg",
-     p2 :"Morden Fort Tufted Upholstered Chesterfield Couches for Living Room, Living Room Furniture Sets, Sofa, Fabric, Velvet",
+     star:"https://image.shutterstock.com/image-vector/four-golden-star-rating-illustration-260nw-1442679176.jpg",
+    p2 :"Morden Fort Tufted Upholstered Chesterfield Couches for Living Room, Living Room Furniture Sets, Sofa, Fabric, Velvet",
 },
 
 {
      image : "https://ak1.ostkcdn.com/images/products/is/images/direct/3c541c23c67c514e2daa59a6937aa28e15b669c9/Porch-%26-Den-Claiborne-California-King-Convertible-Sleeper-Sofa-and-Ottomans.jpg?imwidth=480&impolicy=medium",
      p : 77879,
+     star:"https://image.shutterstock.com/image-vector/four-golden-star-rating-illustration-260nw-1442679176.jpg",
      p2 :"orch & Den California King Convertible Sleeper Sofa and Ottomans",
 },
 
 {
      image : "https://ak1.ostkcdn.com/images/products/is/images/direct/2a60b0fc00e7636aab90d390f56f24dd68e66a09/Ovios-High-Back-Couch-Mid-century-Spring-Top-Grain-Leather-Wood-Legs-Chaise-Sofa.jpg?imwidth=480&impolicy=medium",
      p : 95626,
-    //  stars : "https://ak1.ostkcdn.com/img/mxc/20200227_rating-star-full.svg",
+     star:"https://image.shutterstock.com/image-vector/four-golden-star-rating-illustration-260nw-1442679176.jpg",
      p2  : "Ovios High Back Couch Mid-century Spring Faux Suede Leather Wood Legs Chaise Sofa",
 },
 
 {
      image : "https://ak1.ostkcdn.com/images/products/is/images/direct/8ca26cdda8e84d66bdeb5cd266e99bd55291eea8/Square-Arms-Upholstered-Fabric-Sofa-with-Pillows.jpg?imwidth=480&impolicy=medium",
      p : 38067,
-    //  stars : "https://ak1.ostkcdn.com/img/mxc/20200227_rating-star-full.svg",
-     p2  : "Morden Loveseat Square Arms Upholstered Fabric Sofa with Pillows",
+     star:"https://image.shutterstock.com/image-vector/four-golden-star-rating-illustration-260nw-1442679176.jpg",
+p2  : "Morden Loveseat Square Arms Upholstered Fabric Sofa with Pillows",
 },
 
 {
      image : "https://ak1.ostkcdn.com/images/products/is/images/direct/ca4bbea85d5895af9154b66b88217647fc777794/Cudal-83.9%22-Width-Charlotte-3-Seater-Sofa.jpg?imwidth=480&impolicy=medium",
      p : 102990,
-    //  stars : "https://ak1.ostkcdn.com/img/mxc/20200227_rating-star-full.svg",
-     p2  : "Minimore 83.9 Cudal Corduroy 3-Seater Sofa",
+     star:"https://image.shutterstock.com/image-vector/four-golden-star-rating-illustration-260nw-1442679176.jpg",
+p2  : "Minimore 83.9 Cudal Corduroy 3-Seater Sofa",
 },
 {
      image : "https://ak1.ostkcdn.com/images/products/is/images/direct/0046db7ffa714e44681c1a4e7a516985f532252f/Luxury-Folding-Futon-Sofa-Bed.jpg?imwidth=480&impolicy=medium",
      p : 48774,
-    //  stars : "https://ak1.ostkcdn.com/img/mxc/20200227_rating-star-full.svg",
-     p2 :"luxury folding futon sofa bed",
+     star:"https://image.shutterstock.com/image-vector/four-golden-star-rating-illustration-260nw-1442679176.jpg",
+p2 :"luxury folding futon sofa bed",
 },
 {
      image : "https://ak1.ostkcdn.com/images/products/is/images/direct/f0d9c7ceb30547b56a59d09e94fa32585ca0db92/Bobran-Modern-Velvet-3-Seater-Sofa-by-Christopher-Knight-Home.jpg?imwidth=480&impolicy=medium",
      p : 63782,
-    //  stars : "https://ak1.ostkcdn.com/img/mxc/20200227_rating-star-full.svg",
-     p2 :"Bobran Modern Velvet 3-seat Sofa by Christopher Knight Home - 30.00 D x 83.25 W x 30.25 H",
+     star:"https://image.shutterstock.com/image-vector/four-golden-star-rating-illustration-260nw-1442679176.jpg",
+p2 :"Bobran Modern Velvet 3-seat Sofa by Christopher Knight Home - 30.00 D x 83.25 W x 30.25 H",
 },
 {
      image : "https://ak1.ostkcdn.com/images/products/is/images/direct/069f66fb9aec8cdb311f1fd0066506aaa5e544b4/VIATOL-High-Back-Couch-Mid-century-Suede-Leather-Wood-Legs-Chaise-Sofa.jpg?imwidth=480&impolicy=medium",
      p : 112885,
-     stars : "https://ak1.ostkcdn.com/img/mxc/20200227_rating-star-full.svg",
-     p2 :"VIATOL High Back Couch Mid-century Suede Leather Wood Legs Chaise Sofa",
+     star:"https://image.shutterstock.com/image-vector/four-golden-star-rating-illustration-260nw-1442679176.jpg",
+p2 :"VIATOL High Back Couch Mid-century Suede Leather Wood Legs Chaise Sofa",
 },
 {
      image : "https://ak1.ostkcdn.com/images/products/is/images/direct/456eefc6f57dc82f2fc295518f0752f816876bfe/Morden-Fort-Couches-for-Living-Room%2C-Sofas-for-Living-Room-Furniture-Sets%2C-Sofa%2C-Fabric%2C-Velvet.jpg?imwidth=480&impolicy=medium",
      p : 73386,
-    //  stars : "https://ak1.ostkcdn.com/img/mxc/20200227_rating-star-full.svg",
-     p2 :"Morden Fort Tufted Upholstered Chesterfield Couches for Living Room, Living Room Furniture Sets, Sofa, Fabric, Velvet",
+     star:"https://image.shutterstock.com/image-vector/four-golden-star-rating-illustration-260nw-1442679176.jpg",
+p2 :"Morden Fort Tufted Upholstered Chesterfield Couches for Living Room, Living Room Furniture Sets, Sofa, Fabric, Velvet",
 },
 
 {
      image : "https://ak1.ostkcdn.com/images/products/is/images/direct/3c541c23c67c514e2daa59a6937aa28e15b669c9/Porch-%26-Den-Claiborne-California-King-Convertible-Sleeper-Sofa-and-Ottomans.jpg?imwidth=480&impolicy=medium",
      p : 77879,
-     p2 :"orch & Den California King Convertible Sleeper Sofa and Ottomans",
+     star:"https://image.shutterstock.com/image-vector/four-golden-star-rating-illustration-260nw-1442679176.jpg",
+       p2 :"orch & Den California King Convertible Sleeper Sofa and Ottomans",
 },
 
 {
      image : "https://ak1.ostkcdn.com/images/products/is/images/direct/2a60b0fc00e7636aab90d390f56f24dd68e66a09/Ovios-High-Back-Couch-Mid-century-Spring-Top-Grain-Leather-Wood-Legs-Chaise-Sofa.jpg?imwidth=480&impolicy=medium",
      p : 95626,
-    //  stars : "https://ak1.ostkcdn.com/img/mxc/20200227_rating-star-full.svg",
-     p2  : "Ovios High Back Couch Mid-century Spring Faux Suede Leather Wood Legs Chaise Sofa",
+     star:"https://image.shutterstock.com/image-vector/four-golden-star-rating-illustration-260nw-1442679176.jpg",
+         p2  : "Ovios High Back Couch Mid-century Spring Faux Suede Leather Wood Legs Chaise Sofa",
 },
 
 {
      image : "https://ak1.ostkcdn.com/images/products/is/images/direct/8ca26cdda8e84d66bdeb5cd266e99bd55291eea8/Square-Arms-Upholstered-Fabric-Sofa-with-Pillows.jpg?imwidth=480&impolicy=medium",
      p : 38067,
-    //  stars : "https://ak1.ostkcdn.com/img/mxc/20200227_rating-star-full.svg",
+     star:"https://image.shutterstock.com/image-vector/four-golden-star-rating-illustration-260nw-1442679176.jpg",
      p2  : "Morden Loveseat Square Arms Upholstered Fabric Sofa with Pillows",
 },
 
 {
      image : "https://ak1.ostkcdn.com/images/products/is/images/direct/ca4bbea85d5895af9154b66b88217647fc777794/Cudal-83.9%22-Width-Charlotte-3-Seater-Sofa.jpg?imwidth=480&impolicy=medium",
      p : 102990,
-    //  stars : "https://ak1.ostkcdn.com/img/mxc/20200227_rating-star-full.svg",
+   star:"https://image.shutterstock.com/image-vector/four-golden-star-rating-illustration-260nw-1442679176.jpg",
      p2  : "Minimore 83.9 Cudal Corduroy 3-Seater Sofa",
 },
 
@@ -638,12 +633,12 @@ p.innerText=`${"Sale Starts at INR "+ele.p}`;
 
 var stars=document.createElement("img")
 stars.setAttribute=("id","star")
-stars.src=ele.stars;
-
+stars.src=ele.star;
+stars.style.width="39%"
 var p2=document.createElement("p")
 p2.innerText=ele.p2;
 
-div1.append(image,p,p2)
+div1.append(image,p,stars,p2)
 
 div1.addEventListener("click",function(){
    
@@ -654,7 +649,7 @@ window.location.href="productSpecificPage.html"
 })
 
 
-var x=document.getElementById("cards").append(div1)
+document.getElementById("cards").append(div1)
 
 });
 
