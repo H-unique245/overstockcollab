@@ -165,6 +165,7 @@ nav>ul>li.crimson:hover {
     color: black;
     border: 1px solid #dadcdf;
     box-sizing: border-box;
+    margin-top: 0px;
 }
 
 #tooltip li {
@@ -200,6 +201,7 @@ nav>ul>li.crimson:hover {
     color: black;
     border: 1px solid #dadcdf;
     box-sizing: border-box;
+    margin-top: -10px;
 }
 
 #tooltip>ul>li>h2 {

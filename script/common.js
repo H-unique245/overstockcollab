@@ -10,44 +10,44 @@ document.querySelector("nav > ul:nth-child(1) > li:nth-child(1)").addEventListen
     window.location.href = "furniture.html";
 })
 document.querySelector("nav > ul:nth-child(1) > li:nth-child(2)").addEventListener("click", function () {
-    window.location.href = "/Overstock-Clone/rugs.html";
+    window.location.href = "#";
 })
 document.querySelector("nav > ul:nth-child(1) > li:nth-child(3)").addEventListener("click", function () {
-    window.location.href = "/Overstock-Clone/decor.html";
+    window.location.href = "#";
 })
 document.querySelector("nav > ul:nth-child(1) > li:nth-child(4)").addEventListener("click", function () {
-    window.location.href = "/Overstock-Clone/bed.html";
+    window.location.href = "#";
 })
 document.querySelector("nav > ul:nth-child(1) > li:nth-child(5)").addEventListener("click", function () {
-    window.location.href = "/Overstock-Clone/homeimprov.html";
+    window.location.href = "#";
 })
 document.querySelector("nav > ul:nth-child(1) > li:nth-child(6)").addEventListener("click", function () {
-    window.location.href = "/Overstock-Clone/kitchen.html";
+    window.location.href = "#";
 })
 document.querySelector("nav > ul:nth-child(1) > li:nth-child(7)").addEventListener("click", function () {
-    window.location.href = "/Overstock-Clone/outdoor.html";
+    window.location.href = "#";
 })
 document.querySelector("nav > ul:nth-child(1) > li:nth-child(8)").addEventListener("click", function () {
-    window.location.href = "/Overstock-Clone/jwelry.html";
+    window.location.href = "#";
 })
 document.querySelector("nav > ul:nth-child(1) > li:nth-child(9)").addEventListener("click", function () {
-    window.location.href = "/Overstock-Clone/lighting.html";
+    window.location.href = "#";
 })
 document.querySelector("nav > ul:nth-child(1) > li:nth-child(10)").addEventListener("click", function () {
-    window.location.href = "/Overstock-Clone/kids.html";
+    window.location.href = "#";
 })
 document.querySelector("nav > ul:nth-child(1) > li:nth-child(11)").addEventListener("click", function () {
-    window.location.href = "/Overstock-Clone/more.html";
+    window.location.href = "#";
 })
 document.querySelector("nav > ul:nth-child(3) > li.crimson").addEventListener("click", function () {
-    window.location.href = "/Overstock-Clone/restagcards.html";
+    window.location.href = "#";
 })
 
 document.querySelector("#user-account > .anav").addEventListener("click", function () {
-    window.location.href = "/Overstock-Clone/login.html";
+    window.location.href = "login.html";
 })
 document.querySelector("#user-account > .user-icon").addEventListener("click", function () {
-    window.location.href = "/Overstock-Clone/login.html";
+    window.location.href = "login.html";
 })
 
 var userName = localStorage.getItem("userName");
@@ -68,7 +68,7 @@ function logOut() {
     localStorage.removeItem("userName");
     var btn = document.querySelector("#tooltip > button");
     btn.remove();
-    window.location.href = "/Overstock-Clone/index.html"
+    window.location.href = "index.html"
 
 }
 
